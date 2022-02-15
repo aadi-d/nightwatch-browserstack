@@ -148,7 +148,8 @@ module.exports = {
         'bstack:options' : {
           userName: '${BROWSERSTACK_USER}',
           accessKey: '${BROWSERSTACK_KEY}',
-        }
+        },
+        'build': process.env.BROWSERSTACK_BUILD_NAME
       },
 
       disable_error_log: true,
