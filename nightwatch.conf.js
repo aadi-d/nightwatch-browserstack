@@ -146,8 +146,8 @@ module.exports = {
       // https://www.browserstack.com/automate/capabilities?tag=selenium-4
       desiredCapabilities: {
         'bstack:options' : {
-          userName: '${BROWSERSTACK_USER}',
-          accessKey: '${BROWSERSTACK_KEY}',
+          userName: `${BROWSERSTACK_USER}`,
+          accessKey: `${BROWSERSTACK_KEY}`,
         },
         'build': process.env.BROWSERSTACK_BUILD_NAME
       },
