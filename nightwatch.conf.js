@@ -77,18 +77,6 @@ module.exports = {
           // '-vv'
         ]
       },
-      capabilities = {
-        "os" : "Windows",
-        "os_version" : "10",
-        "browser" : "chrome",
-        "browser_version" : "latest",
-        "name": "BStack -[Jenkins] Sample Test", // test name
-        "build" : process.env.BROWSERSTACK_BUILD_NAME, // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
-        "browserstack.local" : process.env.BROWSERSTACK_LOCAL,
-        "browserstack.localIdentifier" : process.env.BROWSERSTACK_LOCAL_IDENTIFIER,
-        "browserstack.user" : process.env.BROWSERSTACK_USERNAME,
-        "browserstack.key" : process.env.BROWSERSTACK_ACCESS_KEY
-      }
     },
 
     chrome: {
@@ -106,18 +94,6 @@ module.exports = {
             //'--headless'
           ]
         },
-        capabilities = {
-          "os" : "Windows",
-          "os_version" : "10",
-          "browser" : "chrome",
-          "browser_version" : "latest",
-          "name": "BStack -[Jenkins] Sample Test", // test name
-          "build" : process.env.BROWSERSTACK_BUILD_NAME, // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
-          "browserstack.local" : process.env.BROWSERSTACK_LOCAL,
-          "browserstack.localIdentifier" : process.env.BROWSERSTACK_LOCAL_IDENTIFIER,
-          "browserstack.user" : process.env.BROWSERSTACK_USERNAME,
-          "browserstack.key" : process.env.BROWSERSTACK_ACCESS_KEY
-        }
       },
 
       webdriver: {
@@ -173,18 +149,6 @@ module.exports = {
           userName: '${BROWSERSTACK_USER}',
           accessKey: '${BROWSERSTACK_KEY}',
         }
-      },
-      capabilities = {
-        "os" : "Windows",
-        "os_version" : "10",
-        "browser" : "chrome",
-        "browser_version" : "latest",
-        "name": "BStack -[Jenkins] Sample Test", // test name
-        "build" : process.env.BROWSERSTACK_BUILD_NAME, // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
-        "browserstack.local" : process.env.BROWSERSTACK_LOCAL,
-        "browserstack.localIdentifier" : process.env.BROWSERSTACK_LOCAL_IDENTIFIER,
-        "browserstack.user" : process.env.BROWSERSTACK_USERNAME,
-        "browserstack.key" : process.env.BROWSERSTACK_ACCESS_KEY
       },
 
       disable_error_log: true,
