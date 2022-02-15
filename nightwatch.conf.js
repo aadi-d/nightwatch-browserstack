@@ -3,18 +3,6 @@
 const Services = {}; loadServices();
 
 module.exports = {
-  capabilities = {
-    "os" : "Windows",
-    "os_version" : "10",
-    "browser" : "chrome",
-    "browser_version" : "latest",
-    "name": "BStack -[Jenkins] Sample Test", // test name
-    "build" : process.env.BROWSERSTACK_BUILD_NAME, // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
-    "browserstack.local" : process.env.BROWSERSTACK_LOCAL,
-    "browserstack.localIdentifier" : process.env.BROWSERSTACK_LOCAL_IDENTIFIER,
-    "browserstack.user" : process.env.BROWSERSTACK_USERNAME,
-    "browserstack.key" : process.env.BROWSERSTACK_ACCESS_KEY
-  },
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
   src_folders: [],
